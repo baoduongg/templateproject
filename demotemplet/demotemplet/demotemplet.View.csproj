@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Prism.Unity.Forms" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\demotemplet.Logic\demotemplet.Logic.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\" />
+    <None Remove="Behaviors\" />
+    <None Remove="Controls\" />
+    <None Remove="Converters\" />
+    <None Remove="Extensions\" />
+    <None Remove="Models\" />
+    <None Remove="Markup\" />
+    <None Remove="Styles\" />
+    <None Remove="Templets\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Prism.Unity.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Models\" />
+    <Folder Include="Markup\" />
+    <Folder Include="Styles\" />
+    <Folder Include="Templets\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+</Project>

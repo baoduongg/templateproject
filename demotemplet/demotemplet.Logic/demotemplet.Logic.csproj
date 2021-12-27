@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApiDefinitions\" />
+    <None Remove="Bases\" />
+    <None Remove="CommonDtos\" />
+    <None Remove="Configuartions\" />
+    <None Remove="Enums\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Services\" />
+    <None Remove="Utils\" />
+    <None Remove="ViewInterfaces\" />
+    <None Remove="Prism.Unity.Forms" />
+    <None Remove="Infrastructure\Ioc\" />
+    <None Remove="Xamarin.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApiDefinitions\" />
+    <Folder Include="Bases\" />
+    <Folder Include="CommonDtos\" />
+    <Folder Include="Configuartions\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Services\" />
+    <Folder Include="Utils\" />
+    <Folder Include="ViewInterfaces\" />
+    <Folder Include="Infrastructure\Ioc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity.Forms" Version="8.1.97" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+  </ItemGroup>
+</Project>
